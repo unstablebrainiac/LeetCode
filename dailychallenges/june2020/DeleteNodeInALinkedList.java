@@ -1,5 +1,7 @@
 package dailychallenges.june2020;
 
+import common.ListNode;
+
 /*
  * https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/539/week-1-june-1st-june-7th/3347/
  */
@@ -20,24 +22,5 @@ public class DeleteNodeInALinkedList {
         new DeleteNodeInALinkedList().deleteNode(
                 root.next
         ); // 4,1,9
-    }
-
-    private static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return val + ((next != null) ? "," + next : "");
-        }
     }
 }
