@@ -1,5 +1,7 @@
 package dailychallenges.june2020;
 
+import common.TreeNode;
+
 /*
  * https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/539/week-1-june-1st-june-7th/3347/
  */
@@ -49,24 +51,5 @@ public class InvertBinaryTree {
 //               7     2
 //              / \   / \
 //             9   6 3   1
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

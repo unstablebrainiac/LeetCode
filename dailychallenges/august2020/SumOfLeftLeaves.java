@@ -1,5 +1,7 @@
 package dailychallenges.august2020;
 
+import common.TreeNode;
+
 /*
  * https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/552/week-4-august-22nd-august-28th/3435/
  */
@@ -30,24 +32,5 @@ public class SumOfLeftLeaves {
                         )
                 )
         )); // 24
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

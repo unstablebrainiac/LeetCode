@@ -1,5 +1,7 @@
 package dailychallenges.july2020;
 
+import common.TreeNode;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -37,24 +39,5 @@ public class BinaryTreeLevelOrderTraversal2 {
                         )
                 )
         )); // [[15, 7], [9, 20], [3]]
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

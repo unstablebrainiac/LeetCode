@@ -1,5 +1,7 @@
 package dailychallenges.july2020;
 
+import common.TreeNode;
+
 /*
  * https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/545/week-2-july-8th-july-14th/3389/
  */
@@ -23,24 +25,5 @@ public class SameTree {
                         new TreeNode(3)
                 )
         )); // true
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

@@ -1,5 +1,7 @@
 package dailychallenges.june2020;
 
+import common.TreeNode;
+
 /*
  * https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/541/week-3-june-15th-june-21st/3361/
  */
@@ -28,29 +30,5 @@ public class SearchInABinarySearchTree {
                 ),
                 2
         )); // 2
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-
-        @Override
-        public String toString() {
-            return String.valueOf(val);
-        }
     }
 }
