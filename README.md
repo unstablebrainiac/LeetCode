@@ -15,7 +15,7 @@ The class name is derived by converting the problem name to PascalCase, removing
 For example, `Combination Sum II` becomes `CombinationSum2` and `Pow(x, n)` becomes `PowXN`.
 
 For some problems, an external helper class is required such as `ListNode` or `NestedInteger`.
-Such models are implemented as inner classes if they are specific to the problem at hand, or moved to a public class if reusable across problems.
+Such models are implemented as inner classes if they are specific to the problem at hand, or moved to a public class in the common package if reusable across problems.
 
 All classes also have a main method with a test case to run locally and test the functionality.
 
