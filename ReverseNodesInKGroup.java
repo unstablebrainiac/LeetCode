@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /*
  * https://leetcode.com/problems/reverse-nodes-in-k-group/
  */
@@ -36,24 +38,5 @@ public class ReverseNodesInKGroup {
                                                 new ListNode(5))))),
                 3
         )); // 3,2,1,4,5
-    }
-
-    private static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return val + ((next != null) ? "," + next : "");
-        }
     }
 }

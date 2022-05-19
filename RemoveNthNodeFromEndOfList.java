@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /*
  * https://leetcode.com/problems/remove-nth-node-from-end-of-list/
  */
@@ -33,24 +35,5 @@ public class RemoveNthNodeFromEndOfList {
                                                 new ListNode(5))))),
                 2
         )); // 1,2,3,5
-    }
-
-    private static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return val + ((next != null) ? "," + next : "");
-        }
     }
 }

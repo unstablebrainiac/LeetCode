@@ -1,5 +1,7 @@
 package dailychallenges.july2020;
 
+import common.ListNode;
+
 /*
  * https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/546/week-3-july-15th-july-21st/3396/
  */
@@ -22,27 +24,5 @@ public class RemoveLinkedListElements {
                                                                 new ListNode(6))))))),
                 6
         )); // 1->2->3->4->5
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return next == null ? String.valueOf(val) : val + "->" + next;
-        }
     }
 }

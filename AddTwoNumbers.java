@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /*
  * https://leetcode.com/problems/add-two-numbers/
  */
@@ -32,25 +34,5 @@ public class AddTwoNumbers {
                 new ListNode(5, new ListNode(6, new ListNode(4)))
         )); // 7,0,8
     }
-
-    private static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return val + ((next != null) ? "," + next : "");
-        }
-    }
-
 }
 

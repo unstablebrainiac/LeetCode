@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /*
  * https://leetcode.com/problems/swap-nodes-in-pairs/
  */
@@ -19,24 +21,5 @@ public class SwapNodesInPairs {
                                 new ListNode(3,
                                         new ListNode(4))))
         )); // 2,1,4,3
-    }
-
-    private static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return val + ((next != null) ? "," + next : "");
-        }
     }
 }

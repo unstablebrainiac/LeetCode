@@ -1,3 +1,5 @@
+import common.ListNode;
+
 import java.util.Comparator;
 import java.util.Optional;
 import java.util.stream.IntStream;
@@ -36,24 +38,5 @@ public class MergeKSortedLists {
                                 new ListNode(6))
                 }
         )); // 1,1,2,3,4,4,5,6
-    }
-
-    private static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return val + ((next != null) ? "," + next : "");
-        }
     }
 }

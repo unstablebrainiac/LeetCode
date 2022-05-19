@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /*
  * https://leetcode.com/problems/merge-two-sorted-lists/
  */
@@ -27,24 +29,5 @@ public class MergeTwoSortedLists {
                         new ListNode(3,
                                 new ListNode(4)))
         )); // 1,1,2,3,4,4
-    }
-
-    private static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return val + ((next != null) ? "," + next : "");
-        }
     }
 }
