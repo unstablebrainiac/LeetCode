@@ -11,8 +11,8 @@ The classes in dailychallenges and contest directories are self-explanatory.
 
 The class level javadoc has a link to the problem on the leetcode website.
 
-The class name is derived by converting the problem name to PascalCase, removing any special characters, and converting roman numerals to arabic.
-For example, `Combination Sum II` becomes `CombinationSum2` and `Pow(x, n)` becomes `PowXN`.
+The class name is derived by converting the problem name to PascalCase, removing any special characters and/or descriptions, and converting roman numerals to arabic.
+For example, `Two Sum II - Input Array Is Sorted` becomes `TwoSum2` and `Pow(x, n)` becomes `PowXN`.
 
 For some problems, an external helper class is required such as `ListNode` or `NestedInteger`.
 Such models are implemented as inner classes if they are specific to the problem at hand, or moved to a public class in the common package if reusable across problems.
